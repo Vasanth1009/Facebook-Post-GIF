@@ -5,7 +5,6 @@ import {
   CgClose,
   FaUserFriends,
   FaCaretDown,
-  FaRegSmile,
   BsFileImage,
   FaUserTag,
   BsEmojiLaughing,
@@ -15,13 +14,12 @@ import {
   FaVideo,
 } from '../constants/icons';
 import Logo from '../assets/logo.ico';
-import TextColor from '../assets/text-color.png';
 
 export const PostModal = ({ postModalProps }) => {
   const { post, setPost, setGifModal, handlePost, setIsShown } = postModalProps;
 
   return (
-    <div>
+    <div className="modal">
       <div className="modal-header">
         <h3>Create post</h3>
         <CgClose
@@ -81,11 +79,6 @@ export const PostModal = ({ postModalProps }) => {
           ) : (
             ''
           )}
-        </div>
-
-        <div className="color-emoji">
-          <img src={TextColor} alt="Text color" width={40} />
-          <FaRegSmile color="#adb5bd" />
         </div>
 
         <div className="media">

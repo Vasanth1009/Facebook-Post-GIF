@@ -44,7 +44,7 @@ const GifModal = ({ setGifModal, setPost }) => {
   };
 
   return (
-    <div>
+    <div className="modal">
       <div className="modal-header">
         <HiOutlineArrowSmLeft
           color="#6c757d"

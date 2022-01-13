@@ -51,7 +51,7 @@ const Modal = ({ isShown, setIsShown }) => {
         setIsShown(false);
         setGifModal(false);
       }}
-      width={500}
+      width={480}
       preventBodyScrolling={true}
     >
       {gifModal ? (
