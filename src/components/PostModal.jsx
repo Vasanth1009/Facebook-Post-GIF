@@ -14,7 +14,7 @@ import {
   AiOutlineGif,
   FaVideo,
 } from '../constants/icons';
-import Logo from '../assets/logo.png';
+import Logo from '../assets/logo.ico';
 import TextColor from '../assets/text-color.png';
 
 export const PostModal = ({ postModalProps }) => {
@@ -47,11 +47,12 @@ export const PostModal = ({ postModalProps }) => {
         </div>
 
         <div className="content">
-          <div className={post.gifURL !== '' ? 'textarea-gif' : 'textarea'}>
+          <div className="textarea">
             <textarea
               autoFocus
-              name="textarea-1"
-              className="text-area"
+              className={`text-area ', ${
+                post.gifURL !== '' ? 'small' : 'large'
+              }`}
               placeholder="What's on your mind, FaceBook?"
               value={post.text}
               onChange={(event) => {

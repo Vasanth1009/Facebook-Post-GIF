@@ -6,7 +6,7 @@ import {
   FaRegCommentAlt,
   RiShareForwardLine,
 } from '../constants/icons';
-import Logo from '../assets/logo.png';
+import Logo from '../assets/logo.ico';
 import LikeIcon from '../assets/like-icon.svg';
 
 const Post = ({ post }) => {

@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { FaVideo, BsFileImage, BsEmojiSunglasses } from '../constants/icons';
 import Modal from './Modal';
-import Logo from '../assets/logo.png';
+import Logo from '../assets/logo.ico';
 
 const CreatePost = () => {
   const [isShown, setIsShown] = useState(false);
